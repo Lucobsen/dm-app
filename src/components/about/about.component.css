@@ -1,0 +1,25 @@
+.about-page-container {
+  top: 50px;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+.about-user-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-user-image {
+  width: 240px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid grey;
+  box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.5);
+  margin-right: 20px;
+}
+
+.about-user-description {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}

@@ -1,17 +1,20 @@
-import React from 'react';
-import './App.css';
-import { NavBar } from './components/nav-bar/nav-bar.component';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import { AboutPage } from "./components/about/about.component";
+import { HomePage } from "./components/home/home.component";
+import { NavBar } from "./components/nav-bar/nav-bar.component";
 
 function App() {
   return (
-    <div className="App">
+    <main className="app">
       <NavBar />
-      <header className="App-header">
-        <p>
-          Welcome to Luke's DM App
-        </p>
-      </header>
-    </div>
+
+      <Switch>
+        <Route exact path="/" component={HomePage}></Route>
+        <Route path="/about" component={AboutPage}></Route>
+      </Switch>
+    </main>
   );
 }
 
