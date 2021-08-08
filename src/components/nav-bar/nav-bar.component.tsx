@@ -6,7 +6,7 @@ export class NavBar extends Component {
     return (
       <nav className="nav-bar-container">
         <a href="/home" className="nav-bar-item">Home</a>
-        <a href="/blog" className="nav-bar-item">Blog</a>
+        <a href="/about" className="nav-bar-item">About</a>
       </nav>
     )
   }
