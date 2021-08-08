@@ -7,7 +7,7 @@ import { NavBar } from "./components/nav-bar/nav-bar.component";
 
 function App() {
   return (
-    <main className="App">
+    <main className="app">
       <NavBar />
 
       <Switch>
