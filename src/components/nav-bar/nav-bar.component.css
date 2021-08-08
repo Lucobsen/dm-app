@@ -1,0 +1,12 @@
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.nav-bar-item {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding-right: 10px;
+}
