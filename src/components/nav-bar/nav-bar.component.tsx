@@ -5,14 +5,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export class NavBar extends Component {
   render() {
     return (
-      <nav className="nav-bar-container">
-        <Link to="/" className="nav-bar-item">
-          Home
-        </Link>
-        <Link to="/about" className="nav-bar-item">
-          About
-        </Link>
-      </nav>
+      <div className="nav-bar-layout">
+        <div className="nav-bar-container">
+          <nav className="nav-bar-content">
+            <Link to="/" className="nav-bar-item">
+              Home
+            </Link>
+            <Link to="/about" className="nav-bar-item">
+              About
+            </Link>
+          </nav>
+        </div>
+      </div>
     );
   }
 }

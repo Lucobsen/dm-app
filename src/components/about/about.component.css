@@ -1,7 +1,8 @@
 .about-page-container {
-  top: 50px;
+  top: 60px;
   position: absolute;
   width: 100%;
+  max-width: fit-content;
   padding: 20px;
 }
 
@@ -11,15 +12,21 @@
 }
 
 .about-user-image {
-  width: 240px;
-  height: 300px;
+  width: 160px;
+  height: 200px;
   border-radius: 50%;
   border: 5px solid grey;
-  box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.5);
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.6);
   margin-right: 20px;
 }
 
 .about-user-description {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 375px) {
+  .about-user-section {
+    flex-direction: column;
+  }
 }
