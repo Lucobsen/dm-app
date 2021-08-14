@@ -2,6 +2,7 @@
   top: 50px;
   position: absolute;
   width: 100%;
+  max-width: fit-content;
   padding: 20px;
 }
 
@@ -11,8 +12,8 @@
 }
 
 .about-user-image {
-  width: 240px;
-  height: 300px;
+  width: 160px;
+  height: 200px;
   border-radius: 50%;
   border: 5px solid grey;
   box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.5);
