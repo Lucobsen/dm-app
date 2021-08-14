@@ -16,7 +16,7 @@ export class AboutPage extends Component {
             </p>
 
             <p>
-              Before you lies my first foray into developing my sole React
+              Before you, lies my first foray into developing my sole React
               application.
             </p>
           </section>
