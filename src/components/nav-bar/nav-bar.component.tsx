@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./nav-bar.component.css";
+import "./nav-bar.component.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export class NavBar extends Component {
@@ -7,7 +7,7 @@ export class NavBar extends Component {
     return (
       <div className="nav-bar-layout">
         <div className="nav-bar-container">
-          <nav className="nav-bar-content">
+          <nav className="nav-bar">
             <Link to="/" className="nav-bar-item">
               Home
             </Link>
