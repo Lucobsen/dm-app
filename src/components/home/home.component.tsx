@@ -1,12 +1,50 @@
-import React, { Component } from "react";
-import "./home.component.css";
+import React, { Component, MouseEventHandler } from "react";
+import "./home.component.scss";
 
-export class HomePage extends Component {
-  public itemsArray = [{ name: "Alavar" }, { name: "Misc" }];
+interface Props {}
 
-  render() {
+interface State {
+  content: string;
+}
+
+type Item = {
+  name: string;
+  content: string;
+};
+
+export class HomePage extends React.Component<Props, State> {
+  public itemsArray: Item[] = [
+    { name: "Alavar", content: "Alavar Content" },
+    { name: "Misc", content: "Miscellaneous Content" },
+  ];
+
+  constructor(props: Props) {
+    super(props);
+
+    this.state = { content: "Some Basic Text" };
+  }
+
+  /**
+   * Change's the home page content.
+   * @param item
+   */
+  private changeContent(item: Item): void {
+    this.setState({
+      content: item.content,
+    });
+  }
+
+  /**
+   * Renders the Home Component.
+   */
+  public render(): JSX.Element {
     const items: JSX.Element[] = this.itemsArray.map((item) => (
-      <button className="home-page-item">{item.name}</button>
+      <button
+        className="home-page-item"
+        onClick={() => this.changeContent(item)}
+      >
+        {item.name}
+      </button>
     ));
 
     return (
@@ -14,7 +52,9 @@ export class HomePage extends Component {
         <div className="home-page-container">
           <ul className="home-page-items">{items}</ul>
 
-          <div className="home-page-content"></div>
+          <div className="home-page-content">
+            <p className="home-page-text">{this.state.content}</p>
+          </div>
         </div>
       </div>
     );
