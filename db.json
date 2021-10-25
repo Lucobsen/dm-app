@@ -1,0 +1,12 @@
+{
+  "worldDescriptions": [
+    {
+      "id": "alavar-world-id",
+      "description": "Alavar is a world full of adventure and wonder!"
+    },
+    {
+      "id": "misc-world-id",
+      "description": "Some other stuff..."
+    }
+  ]
+}
